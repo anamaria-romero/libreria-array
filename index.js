@@ -340,4 +340,18 @@ let Libro = [{
     peso: "1 Kilo"
 }
 ]
-
+console.log("El titulo del libro es: ",Libro[1].titulo);
+console.log("El autor del libro es: ",Libro[8].autor);
+console.log("El genero del libro es: ",Libro[0].genero);
+console.log("El idioma del libro es: ",Libro[17].idioma);
+console.log("El precio del libro es: ",Libro[13].precio);
+console.log("El formato del libro es: ",Libro[6].formato);
+console.log("El isbn del libro es: ",Libro[11].isbn);
+console.log("La descripcion del libro es: ",Libro[2].descripcion);
+console.log("El estado del libro es: ",Libro[9].estado);
+console.log("La ubicacion del libro es: ",Libro[1].ubicacion);
+console.log("La fecha de publicacion del libro es: ",Libro[5].fecha_publicacion);
+console.log("La editorial del libro es: ",Libro[19].editorial);
+console.log("La cantidad de paginas del libro es: ",Libro[10].paginas);
+console.log("Las dimensiones del libro es: ",Libro[5].dimensiones);
+console.log("El peso del libro es: ",Libro[7].peso);
