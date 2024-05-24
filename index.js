@@ -4,7 +4,7 @@ let pilaLibros = [
         autor: "Abraham Stoker",
         genero: "Terror, Ficcion Gotica",
         idioma: "Ingles",
-        precio: "70.000",
+        precio: 70000,
         formato: "Tapa Dura",
         isbn: "9780194790581",
         descripcion: "En la obra de Bram Stoker, la figura del vampiro, inspirada en una creencia popular, encontró su forma perfecta. El autor incorpora elementos de antiguas leyendas y tradiciones orales en una novela gótica fascinante. Con gran habilidad, coloca al vampiro de tiempos aparentemente pasados en la época moderna. ",
@@ -21,7 +21,7 @@ let pilaLibros = [
         autor: "George Orwell",
         genero: "Distopía",
         idioma: "Inglés",
-        precio: "120.000",
+        precio: 120000,
         formato: "Tapa Blanda",
         isbn: "9780451524935",
         descripcion: "Una novela clásica que explora un futuro distópico donde el gobierno totalitario controla todos los aspectos de la vida de las personas.",
@@ -38,7 +38,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Realismo mágico",
         idioma: "Español",
-        precio: "80.000",
+        precio: 80000,
         formato: "Tapa Dura",
         isbn: "9780307474728",
         descripcion: "La historia épica de la familia Buendía a lo largo de varias generaciones en el ficticio pueblo de Macondo.",
@@ -55,7 +55,7 @@ let pilaLibros = [
         autor: "Harper Lee",
         genero: "Ficción clásica",
         idioma: "Ingles",
-        precio: "150.000",
+        precio: 150000,
         formato: "Tapa Dura",
         isbn: "9780061120084",
         descripcion: "Una novela que aborda temas de injusticia racial y moralidad a través de los ojos de una niña en el sur de Estados Unidos durante la década de 1930.",
@@ -72,7 +72,7 @@ let pilaLibros = [
         autor: "William Shakespeare", 
         genero: "Tragedia", 
         idioma: "Francés", 
-        precio: "25.990", 
+        precio: 25990, 
         formato: "Versión Digital", 
         isbn: "9789871101325", 
         descripcion: "La famosa historia de amor entre dos jóvenes de familias rivales en Verona", 
@@ -89,7 +89,7 @@ let pilaLibros = [
         autor: "Mary Shelley",
         genero: "Terror, Ciencia Ficción",
         idioma: "Inglés",
-        precio: "65.000",
+        precio: 65000,
         formato: "Tapa Blanda",
         isbn: "9788491051179",
         descripcion: "La historia de Frankenstein sigue siendo una de las historias de terror más influyentes de todos los tiempos. Mary Shelley creó un personaje que se ha convertido en un icono cultural, explorando temas como la ambición desmedida y la moralidad científica.",
@@ -107,7 +107,7 @@ let pilaLibros = [
         autor: "William Shakespeare", 
         genero: "Tragedia", 
         idioma: "Alemán", 
-        precio: "30.990", 
+        precio: 30990, 
         formato: "Tapa blanda", 
         isbn: "9788433920673", 
         descripcion: "La historia del ambicioso lord Macbeth y su esposa, quienes desencadenan una serie de eventos trágicos al intentar acceder al trono de Escocia", 
@@ -124,7 +124,7 @@ let pilaLibros = [
         autor: "Isabel Allende",
         genero: "Realismo mágico",
         idioma: "Español",
-        precio: "49.900",
+        precio: 49900,
         formato: "Tapa dura",
         isbn: "9788408170690",
         descripcion: "La saga de la familia Trueba en un país sin nombre en América del Sur.",
@@ -141,7 +141,7 @@ let pilaLibros = [
         autor: "Carlos Ruiz Zafón",
         genero: "Ficción",
         idioma: "Español",
-        precio: "90.900",
+        precio: 90900,
         formato: "Tapa blanda",
         isbn: "9788408172175",
         descripcion: "Un joven descubre un libro que cambiará su vida en la Barcelona de la posguerra.",
@@ -158,7 +158,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Romántica",
         idioma: "Español",
-        precio: "59.900",
+        precio: 59900,
         formato: "Amazon",
         isbn: "9780307389732",
         descripcion: "Una historia de amor entre Fermina Daza y Florentino Ariza.",
@@ -175,7 +175,7 @@ let pilaLibros = [
         autor: "Julio Cortázar",
         genero: "Ficción",
         idioma: "Español",
-        precio: "54.900",
+        precio: 54900,
         formato: "Tapa blanda",
         isbn: "9788437604947",
         descripcion: "Una novela experimental que puede leerse de múltiples maneras.",
@@ -192,7 +192,7 @@ let pilaLibros = [
         autor: "Juan Rulfo",
         genero: "Ficción",
         idioma: "Español",
-        precio: "34.900",
+        precio: 34900,
         formato: "Tapa dura",
         isbn: "9788420471976",
         descripcion: "Un hombre busca a su padre en un pueblo fantasma en México.",
@@ -209,7 +209,7 @@ let pilaLibros = [
         autor: "Roberto Bolaño",
         genero: "Ficción",
         idioma: "Español",
-        precio: "69.900",
+        precio: 69900,
         formato: "Tapa blanda",
         isbn: "9788433967763",
         descripcion: "Dos poetas buscan a una misteriosa autora en México y el mundo.",
@@ -226,7 +226,7 @@ let pilaLibros = [
         autor: "Ernesto Sabato",
         genero: "Ficción",
         idioma: "Español",
-        precio: "54.900",
+        precio: 54900,
         formato: "Tapa blanda",
         isbn: "9788432201912",
         descripcion: "Un pintor obsesionado narra su descenso a la locura.",
@@ -243,7 +243,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Ficción",
         idioma: "Español",
-        precio: "30.000",
+        precio: 30000,
         formato: "Versión Digital",
         isbn: "9781400034710",
         descripcion: "La crónica de un asesinato anunciado en un pequeño pueblo.",
@@ -260,7 +260,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Ficción",
         idioma: "Español",
-        precio: "21.900",
+        precio: 21900,
         formato: "Tapa blanda",
         isbn: "9780307474727",
         descripcion: "La historia de un coronel que espera una pensión que nunca llega.",
@@ -277,7 +277,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Ficción",
         idioma: "Español",
-        precio: "60.900",
+        precio: 60900,
         formato: "Tapa dura",
         isbn: "9781400034529",
         descripcion: "Una novela sobre un dictador solitario en su palacio desmoronado.",
@@ -294,7 +294,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Ficción",
         idioma: "Español",
-        precio: "96.000",
+        precio: 96000,
         formato: "Tapa blanda",
         isbn: "9781400034901",
         descripcion: "Una novela sobre la llegada de un médico a un pequeño pueblo.",
@@ -311,7 +311,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Ficción",
         idioma: "Español",
-        precio: "43.000",
+        precio: 43000,
         formato: "Tapa dura",
         isbn: "9781400034918",
         descripcion: "Una novela sobre la violencia y la corrupción en un pequeño pueblo.",
@@ -328,7 +328,7 @@ let pilaLibros = [
         autor: "Gabriel García Márquez",
         genero: "Ficción",
         idioma: "Español",
-        precio: "82.000",
+        precio: 82000,
         formato: "Tapa blanda",
         isbn: "9781400034871",
         descripcion: "Una colección de cuentos que exploran el realismo mágico.",
@@ -401,6 +401,7 @@ function mostrarMenu() {
 }
 mostrarMenu();
 
+
 const titulo = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
@@ -445,3 +446,50 @@ const ubicacion = pilaLibros.map((Libro) => {
     };
 });
 console.table(ubicacion);
+
+const dimensiones = pilaLibros.map((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        dimensiones: Libro.dimensiones,
+        peso: Libro.peso,
+    };
+});
+console.table(dimensiones);
+
+const paginas = pilaLibros.map((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        paginas: Libro.paginas,
+        idioma: Libro.idioma,
+    };
+});
+console.table(paginas);
+
+const formato = pilaLibros.map((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        formato: Libro.formato,
+        dimensiones: Libro.dimensiones,
+    };
+});
+console.table(formato);
+
+const precio = pilaLibros.map((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        precio: Libro.precio,
+        ubicacion: Libro.ubicacion,
+    };
+});
+console.table(precio);
+
+const descripcion = pilaLibros.map((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        descripcion: Libro.descripcion,
+        genero: Libro.genero,
+    };
+});
+console.table(descripcion);
+
+
