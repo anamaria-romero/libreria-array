@@ -492,4 +492,23 @@ const descripcion = pilaLibros.map((Libro) => {
 });
 console.table(descripcion);
 
+const libroDescuento = pilaLibros.map ((Libro) => {
+    return {
+    ...Libro,
+    descuento: 20000,
+    };
+});
+console.log(libroDescuento);
+
+const listaDescuento = pilaLibro.map((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        autor: Libro.autor,
+        editorial: Libro.editorial,
+        precio: Libro.precio,
+        descuento: Libro.libroDescuento,
+    };
+});
+console.table(listaDescuento);
+
 
