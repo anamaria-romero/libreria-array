@@ -481,6 +481,7 @@ const lista1 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         autor: Libro.autor,
+        editorial: Libro.editorial,
         precio: Libro.precio,
     };
 });
