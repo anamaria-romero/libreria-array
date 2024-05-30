@@ -1,3 +1,4 @@
+//pila libros//
 let pilaLibros = [
     Libro = {
         titulo: "Dracula",
@@ -343,20 +344,48 @@ let pilaLibros = [
 ];
 
 
-function agregarLibro(Libro) {
-    pilaLibros.push(Libro);
-    console.log(Libro + " Agregado encima de la pila.");
-}
+//defina la logica para Agregar un libro encima de la pila usando el método push. //
+function agregarLibro() {
+    let nuevoLibro =  [
+        {
+        titulo: "Harry Potter",
+        autor: "Carlos Ruiz Zafón",
+        genero: "Ficción",
+        idioma: "Español",
+        precio: 90900,
+        formato: "Tapa blanda",
+        isbn: "9788408172175",
+        descripcion: "Un joven descubre un libro que cambiará su vida en la Barcelona de la posguerra.",
+        estado: "Nuevo",
+        ubicacion: "Cúspide",
+        fecha_publicacion: "2001",
+        editorial: "Penguin Clásicos",
+        paginas: 576,
+        dimensiones: "14 x 3 x 21 cm",
+        peso: "150 Gramos"
+    }
+];
 
+    pilaLibros.push.apply(nuevoLibro, pilaLibros);
+    pilaLibros = nuevoLibro;
+    console.log(" Agregado encima de la pila.");
+    console.log(pilaLibros);
+};
+
+
+//Quitar un libro de encima de la pila.//
 function quitarLibro() {
     if (pilaLibros.length === 0) {
         console.log("La pila de libros está vacía.");
     } else {
         let libroQuitado = pilaLibros.pop();
-        console.log(libroQuitado + " El libro ha sido eliminado.");
+        console.log(" El libro ha sido eliminado.");
+        console.log(libroQuitado)
     }
 }
 
+
+//Mostrar la pila actual de libros. //
 function mostrarPila() {
     if (pilaLibros.length === 0) {
         console.log("La pila de libros está vacía.");
@@ -368,22 +397,32 @@ function mostrarPila() {
     }
 }
 
+
+//Diseña un menú en consola en el cual pueda llamar las funciones anteriormente mencionadas//
 function mostrarMenu() {
     console.log("¡Bienvenido a la gestión de libros!");
     let opcion;
     do {
         console.log("\nMenú:");
-        console.log("1. Agregar un libro");
-        console.log("2. Quitar un libro");
-        console.log("3. Mostrar la pila de libros");
-        console.log("4. Salir");
+        console.log("1. Agregar un libro.");
+        console.log("2. Quitar un libro.");
+        console.log("3. Mostrar la pila de libros.");
+        console.log("4. Listar los libros en 10 iteraciones diferentes.");
+        console.log("5. Agregar descuentos.");
+        console.log("6. Listado de libros con descuentos.");
+        console.log("7. Libros con un precio mayor a $50.000.");
+        console.log("8. Libros por numero mas alto de paginas.");
+        console.log("9. Libros por numero de paginas de mayor a menor.");
+        console.log("10. Libros caros por titulo mayores a $50.000.");
+        console.log("11. Libros que tengan menos de 200 paginas.");
+        console.log("12. Libros mayores a $100.000  de mayor a menor.");
+        console.log("13. Salir");
 
-        opcion = prompt("Seleccione una opción (1-4): " + " 1. Agregar un libro." + " 2. Quitar un libro." + " 3. Mostrar la pila de libros." + " 4. Salir.");
+        opcion = prompt("Seleccione una opción (1-13): \n" + " 1. Agregar un libro. \n" + " 2. Quitar un libro. \n" + " 3. Mostrar la pila de libros. \n" + " 4. Listar los libros en 10 iteraciones diferentes. \n" + " 5. Agregar descuentos. \n" + " 6. Listado de libros con descuentos. \n" + " 7. Libros con un precio mayor a $50.000. \n" + " 8. Libros por numero mas alto de paginas. \n" + " 9. Libros por numero de paginas de mayor a menor. \n" + " 10. Libros caros por titulo mayores a $50.000. \n" + " 11. Libros que tengan menos de 200 paginas. \n" + " 12. Libros mayores a $100.000 de mayor a menor. \n" +  " 13. Salir.");
 
         switch (opcion) {
             case "1":
-                let nuevoLibro = prompt("Ingrese el título del nuevo libro:");
-                agregarLibro(nuevoLibro);
+                agregarLibro();
                 break;
             case "2":
                 quitarLibro();
@@ -392,123 +431,234 @@ function mostrarMenu() {
                 mostrarPila(Libro);
                 break;
             case "4":
-                console.log("Saliendo de la libreria");
+                console.table(lista1);
+                console.table(lista2);
+                console.table(lista3);
+                console.table(lista4);
+                console.table(lista5);
+                console.table(lista6);
+                console.table(lista7);
+                console.table(lista8);
+                console.table(lista9);
+                console.table(lista10);
+                break;
+            case "5":
+                console.log(libroDescuento);
+                break;
+            case "6":
+                console.table(listaDescuento);
+                break;
+            case "7":
+                console.log(librosCaros);
+                break;
+            case "8":
+                console.table(filtrarDeMayorAMenor);
+                break;
+            case "9":
+                console.log(listaDeMayorAMenor);
+                break;
+            case "10":
+                console.table(librosCarosPorTitulo);
+                break;
+            case "11":
+                console.table(librosMenoresDe200);
+                break;
+            case "12":
+                console.table(librosCarosDeMayorAMenor);
+                break;
+            case "13":
+                console.log("Salir");
                 break;
             default:
                 console.log("Opción no válida. Por favor, seleccione una opción válida.");
         }
-    } while (opcion !== "4");
+    } while (opcion !== "13");
 }
-mostrarMenu();
 
 
-const titulo = pilaLibros.map((Libro) => {
+// Realizar uso del array Method .map y listar los libros por Titulo, Autor, Editorial y Precio; Crear 10 iteraciones diferentes manteniendo el atributo Titulo//
+const lista1 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         autor: Libro.autor,
         precio: Libro.precio,
     };
 });
-console.table(titulo);
 
-const genero = pilaLibros.map((Libro) => {
+const lista2 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         genero: Libro.genero,
         descripcion: Libro.descripcion,
     };
 });
-console.table(genero);
 
-const idioma = pilaLibros.map((Libro) => {
+const lista3 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         idioma: Libro.idioma,
         formato: Libro.formato,
     };
 });
-console.table(idioma);
 
-const isbn = pilaLibros.map((Libro) => {
+const lista4 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         isbn: Libro.isbn,
         estado: Libro.estado,
     };
 });
-console.table(isbn);
 
-const ubicacion = pilaLibros.map((Libro) => {
+const lista5 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         ubicacion: Libro.ubicacion,
         fecha_publicacion: Libro.fecha_publicacion,
     };
 });
-console.table(ubicacion);
 
-const dimensiones = pilaLibros.map((Libro) => {
+const lista6 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         dimensiones: Libro.dimensiones,
         peso: Libro.peso,
     };
 });
-console.table(dimensiones);
 
-const paginas = pilaLibros.map((Libro) => {
+const lista7 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         paginas: Libro.paginas,
         idioma: Libro.idioma,
     };
 });
-console.table(paginas);
 
-const formato = pilaLibros.map((Libro) => {
+const lista8 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         formato: Libro.formato,
         dimensiones: Libro.dimensiones,
     };
 });
-console.table(formato);
 
-const precio = pilaLibros.map((Libro) => {
+const lista9 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         precio: Libro.precio,
         ubicacion: Libro.ubicacion,
     };
 });
-console.table(precio);
 
-const descripcion = pilaLibros.map((Libro) => {
+const lista10 = pilaLibros.map((Libro) => {
     return {
         titulo: Libro.titulo,
         descripcion: Libro.descripcion,
         genero: Libro.genero,
     };
 });
-console.table(descripcion);
 
+
+//Al array de objetos creado se debe agregar un atributo llamado descuento al cual tiene un valor del 20 porciento.//
 const libroDescuento = pilaLibros.map ((Libro) => {
     return {
     ...Libro,
-    descuento: 20000,
+    descuento: 20,
     };
 });
-console.log(libroDescuento);
 
-const listaDescuento = pilaLibro.map((Libro) => {
+
+//Listar los libros por Titulo, Autor, Editorial, Precio y descuento.//
+const listaDescuento = libroDescuento.map((Libro) => {
     return {
         titulo: Libro.titulo,
         autor: Libro.autor,
         editorial: Libro.editorial,
         precio: Libro.precio,
-        descuento: Libro.libroDescuento,
+        descuento: Libro.descuento
     };
 });
-console.table(listaDescuento);
 
 
+//Obtener un array con los libros que tengan un precio mayor a 50 dolares//
+const librosCaros = pilaLibros.filter ((Libro) => {
+    return Libro.precio > 50000;
+});
+
+
+//Realizar un array con el resumen de libros por numero mas alto de paginas mostrando, titulo, autor, editorial, paginas//
+const filtrarDeMayorAMenor = pilaLibros.sort ((a, b) => b.paginas - a.paginas)
+.map ((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        autor: Libro.autor,
+        editorial: Libro.editorial,
+        paginas: Libro.paginas
+    };
+});
+
+
+//Ordenar los libros por numero de paginas de mayor a menor//
+const listaDeMayorAMenor = pilaLibros.sort ((a, b) => b.paginas - a.paginas)
+.map ((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        autor: Libro.autor,
+        genero: Libro.genero,
+        idioma: Libro.idioma,
+        precio: Libro.precio,
+        formato: Libro.formato,
+        isbn: Libro.isbn,
+        descripcion: Libro.descripcion,
+        estado: Libro.estado,
+        ubicacion: Libro.ubicacion,
+        fecha_publicacion: Libro.fecha_publicacion,
+        editorial: Libro.editorial,
+        paginas: Libro.paginas,
+        dimensiones: Libro.dimensiones,
+        peso: Libro.peso
+    };
+});
+
+//Obtener un array de libros caros por titulo mayores de 11 dolares, resumirlos por titulo, autor, precio. //
+const librosCarosPorTitulo = pilaLibros.filter ((Libro) =>{
+    return Libro.precio > 50000;
+})
+.map ((titulo)=> {
+    return {
+        titulo: titulo.titulo,
+        autor: titulo.autor,
+        precio: titulo.precio
+    };
+});
+
+
+//Realiza un resumen de libros que tengan menos de 100 paginas resumirlos por titulo, autor, editorial y paginas.//
+const librosMenoresDe200 = pilaLibros.filter ((Libro) =>{
+    return Libro.paginas < 200;
+})
+.map ((titulo)=> {
+    return {
+        titulo: titulo.titulo,
+        autor: titulo.autor,
+        editorial: titulo.editorial,
+        paginas: titulo.paginas
+    };
+});
+
+
+//Realizar un resumen de libros caros mayores a $100.000 de mayor a menor resumirlos por titulo, autor, precio.//
+const librosCarosDeMayorAMenor = pilaLibros.filter ((Libro) =>{
+    return Libro.precio > 100000;
+}) 
+.map ((Libro) => {
+    return {
+        titulo: Libro.titulo,
+        autor: Libro.autor,
+        precio: Libro.precio,
+    };
+});
+pilaLibros.sort ((a, b) => b.precio - a.precio)
+
+
+
+mostrarMenu();
