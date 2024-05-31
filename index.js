@@ -72,7 +72,7 @@ let pilaLibros = [
         titulo: "Romeo y Julieta", 
         autor: "William Shakespeare", 
         genero: "Tragedia", 
-        idioma: "Francés", 
+        idioma: "Frances", 
         precio: 25990, 
         formato: "Versión Digital", 
         isbn: "9789871101325", 
@@ -134,7 +134,7 @@ let pilaLibros = [
         fecha_publicacion: "1982",
         editorial: "Penguin Clásicos",
         paginas: 480,
-        dimensiones: "14 x 2.5 x 21 cm",
+        dimensiones: "17 x 2.5 x 21 cm",
         peso: "50 Gramos"
     },
     {
@@ -168,8 +168,8 @@ let pilaLibros = [
         fecha_publicacion: "1985",
         editorial: "Penguin Clásicos",
         paginas: 368,
-        dimensiones: "13.5 x 2 x 20.5 cm",
-        peso: "95 Gramos"
+        dimensiones: "13.5 x 2 x 21 cm",
+        peso: "97 Gramos"
     },
     {
         titulo: "Rayuela",
@@ -202,7 +202,7 @@ let pilaLibros = [
         fecha_publicacion: "1955",
         editorial: "RM Verlag",
         paginas: 124,
-        dimensiones: "12.5 x 1 x 19.5 cm",
+        dimensiones: "12.5 x 1 x 19 cm",
         peso: "95 Gramos"
     },
     {
@@ -237,7 +237,7 @@ let pilaLibros = [
         editorial: "RM Verlag",
         paginas: 168,
         dimensiones: "13 x 1 x 20 cm",
-        peso: "1 Kilo"
+        peso: "63 gramos"
     },
     {
         titulo: "Crónica de una muerte anunciada",
@@ -253,7 +253,7 @@ let pilaLibros = [
         fecha_publicacion: "1981",
         editorial: "RM Verlag",
         paginas: 128,
-        dimensiones: "12.5 x 1 x 19.5 cm",
+        dimensiones: "12.5 x 1.9 x 19.5 cm",
         peso: "70 Gramos"
     },
     {
@@ -270,7 +270,7 @@ let pilaLibros = [
         fecha_publicacion: "1961",
         editorial: "Editorial Sudamericana",
         paginas: 96,
-        dimensiones: "12.5 x 1 x 19.5 cm",
+        dimensiones: "12.5 x 1.4 x 19.5 cm",
         peso: "80 Gramos"
     },
     {
@@ -287,7 +287,7 @@ let pilaLibros = [
         fecha_publicacion: "1975",
         editorial: "Editorial Sudamericana",
         paginas: 272,
-        dimensiones: "13 x 1.8 x 20 cm",
+        dimensiones: "13 x 4 x 20 cm",
         peso: "49 Gramos"
     },
     {
@@ -304,7 +304,7 @@ let pilaLibros = [
         fecha_publicacion: "1955",
         editorial: "Editorial Sudamericana",
         paginas: 128,
-        dimensiones: "12.5 x 1 x 19.5 cm",
+        dimensiones: "12.5 x 3 x 19.5 cm",
         peso: "100 Gramos"
     },
     {
@@ -338,7 +338,7 @@ let pilaLibros = [
         fecha_publicacion: "1972",
         editorial: "Editorial Sudamericana",
         paginas: 160,
-        dimensiones: "12.5 x 1 x 19.5 cm",
+        dimensiones: "12.5 x 2 x 19.5 cm",
         peso: "1 Kilo"
     }
 ];
@@ -416,9 +416,15 @@ function mostrarMenu() {
         console.log("10. Libros caros por titulo mayores a $50.000.");
         console.log("11. Libros que tengan menos de 200 paginas.");
         console.log("12. Libros mayores a $100.000  de mayor a menor.");
-        console.log("13. Salir");
+        console.log("13. Buscar un objeto del array por titulo.");
+        console.log("14. Buscar un objeto del array por autor.");
+        console.log("15. Buscar un objeto del array por fecha de publicacion.");
+        console.log("16. Buscar un objeto del array por genero.");
+        console.log("17. Buscar un objeto del array por idioma.");
+        console.log("18. Crear 10 iteraciones diferentes de busqueda de libros en el sistema.");
+        console.log("19. Salir");
 
-        opcion = prompt("Seleccione una opción (1-13): \n" + " 1. Agregar un libro. \n" + " 2. Quitar un libro. \n" + " 3. Mostrar la pila de libros. \n" + " 4. Listar los libros en 10 iteraciones diferentes. \n" + " 5. Agregar descuentos. \n" + " 6. Listado de libros con descuentos. \n" + " 7. Libros con un precio mayor a $50.000. \n" + " 8. Libros por numero mas alto de paginas. \n" + " 9. Libros por numero de paginas de mayor a menor. \n" + " 10. Libros caros por titulo mayores a $50.000. \n" + " 11. Libros que tengan menos de 200 paginas. \n" + " 12. Libros mayores a $100.000 de mayor a menor. \n" +  " 13. Salir.");
+        opcion = prompt("Seleccione una opción (1-13): \n" + " 1. Agregar un libro. \n" + " 2. Quitar un libro. \n" + " 3. Mostrar la pila de libros. \n" + " 4. Listar los libros en 10 iteraciones diferentes. \n" + " 5. Agregar descuentos. \n" + " 6. Listado de libros con descuentos. \n" + " 7. Libros con un precio mayor a $50.000. \n" + " 8. Libros por numero mas alto de paginas. \n" + " 9. Libros por numero de paginas de mayor a menor. \n" + " 10. Libros caros por titulo mayores a $50.000. \n" + " 11. Libros que tengan menos de 200 paginas. \n" + " 12. Libros mayores a $100.000 de mayor a menor. \n" +  " 13. Buscar un objeto del array por titulo. \n" + " 14. Buscar un objeto del array por autor. \n" + " 15. Buscar un objeto del array por fecha publicacion. \n" + " 16. Buscar un objeto del array por genero. \n" + " 17. Buscar un objeto del array por idioma \n" + " 18. Crear 10 iteraciones diferentes de busqueda de libros en el sistema.\n" +" 19. Salir.");
 
         switch (opcion) {
             case "1":
@@ -467,12 +473,39 @@ function mostrarMenu() {
                 console.table(librosCarosDeMayorAMenor);
                 break;
             case "13":
+                console.table(libroPorTitulo);
+                break;
+            case "14":
+                console.table(libroPorAutor);
+                break;
+            case "15":
+                console.table(libroPorFecha);
+                break;
+            case "16":
+                console.table(libroPorGenero);
+                break;
+            case "17":
+                console.table(libroPorIdioma);
+                break;
+            case "18":
+                console.table(libroPorPrecio);
+                console.table(libroPorIsbn);
+                console.table(libroPorDescripcion);
+                console.table(libroPorEditorial);
+                console.table(libroPorUbicacion);
+                console.table(libroPorPaginas);
+                console.table(libroPorDimensiones);
+                console.table(libroPorPeso);
+                console.table(libroPorEstado);
+                console.table(libroPorFormato);
+                break;
+            case "19":
                 console.log("Salir");
                 break;
             default:
                 console.log("Opción no válida. Por favor, seleccione una opción válida.");
         }
-    } while (opcion !== "13");
+    } while (opcion !== "19");
 }
 
 
@@ -661,5 +694,84 @@ const librosCarosDeMayorAMenor = pilaLibros.filter ((Libro) =>{
 pilaLibros.sort ((a, b) => b.precio - a.precio)
 
 
+//Buscar un objeto del array por titulo.//
+let libroPorTitulo = pilaLibros.find((Libro) => {
+    return Libro.titulo === "La mala hora";
+  });
+
+
+//Buscar un objeto del array por autor.//
+let libroPorAutor = pilaLibros.find((Libro) => {
+    return Libro.autor === "Abraham Stoker";
+  });
+
+
+//Buscar un objeto del array por fecha de publicación.//
+let libroPorFecha = pilaLibros.find((Libro) => {
+    return Libro.fecha_publicacion === "11 de julio de 1960";
+  });
+
+
+//Buscar un objeto del array por genero.//
+let libroPorGenero = pilaLibros.find((Libro) => {
+    return Libro.genero === "Realismo mágico";
+  });
+
+
+//Buscar un objeto del array por idioma.//
+let libroPorIdioma = pilaLibros.find((Libro) => {
+    return Libro.idioma === "Frances";
+  });
+
+
+//Crear 10 iteraciones diferentes de búsqueda de libros en el sistema.//
+let libroPorPrecio = pilaLibros.find((Libro) => {
+    return Libro.precio === 120000;
+  });
+
+  
+let libroPorIsbn = pilaLibros.find((Libro) => {
+    return Libro.isbn === "9780061120084";
+  });
+
+
+let libroPorDescripcion = pilaLibros.find((Libro) => {
+    return Libro.descripcion === "Una novela que aborda temas de injusticia racial y moralidad a través de los ojos de una niña en el sur de Estados Unidos durante la década de 1930.";
+  });
+
+
+let libroPorEditorial = pilaLibros.find((Libro) => {
+    return Libro.editorial === "Editorial Sudamericana";
+  });
+
+
+let libroPorUbicacion = pilaLibros.find((Libro) => {
+    return Libro.ubicacion === "Amazon";
+  });
+
+
+let libroPorPaginas = pilaLibros.find((Libro) => {
+    return Libro.paginas === 736;
+  });
+
+
+let libroPorDimensiones = pilaLibros.find((Libro) => {
+    return Libro.dimensiones === "12.5 x 1 x 19 cm";
+  });
+
+
+let libroPorPeso = pilaLibros.find((Libro) => {
+    return Libro.peso=== "90 Gramos";
+  });
+
+
+let libroPorEstado = pilaLibros.find((Libro) => {
+  return Libro.estado === "Usado";
+  });
+
+
+let libroPorFormato = pilaLibros.find((Libro) => {
+  return Libro.formato === "Versión Digital";
+  });
 
 mostrarMenu();
