@@ -403,28 +403,7 @@ function mostrarMenu() {
     console.log("¡Bienvenido a la gestión de libros!");
     let opcion;
     do {
-        console.log("\nMenú:");
-        console.log("1. Agregar un libro.");
-        console.log("2. Quitar un libro.");
-        console.log("3. Mostrar la pila de libros.");
-        console.log("4. Listar los libros en 10 iteraciones diferentes.");
-        console.log("5. Agregar descuentos.");
-        console.log("6. Listado de libros con descuentos.");
-        console.log("7. Libros con un precio mayor a $50.000.");
-        console.log("8. Libros por numero mas alto de paginas.");
-        console.log("9. Libros por numero de paginas de mayor a menor.");
-        console.log("10. Libros caros por titulo mayores a $50.000.");
-        console.log("11. Libros que tengan menos de 200 paginas.");
-        console.log("12. Libros mayores a $100.000  de mayor a menor.");
-        console.log("13. Buscar un objeto del array por titulo.");
-        console.log("14. Buscar un objeto del array por autor.");
-        console.log("15. Buscar un objeto del array por fecha de publicacion.");
-        console.log("16. Buscar un objeto del array por genero.");
-        console.log("17. Buscar un objeto del array por idioma.");
-        console.log("18. Crear 10 iteraciones diferentes de busqueda de libros en el sistema.");
-        console.log("19. Salir");
-
-        opcion = prompt("Seleccione una opción (1-13): \n" + " 1. Agregar un libro. \n" + " 2. Quitar un libro. \n" + " 3. Mostrar la pila de libros. \n" + " 4. Listar los libros en 10 iteraciones diferentes. \n" + " 5. Agregar descuentos. \n" + " 6. Listado de libros con descuentos. \n" + " 7. Libros con un precio mayor a $50.000. \n" + " 8. Libros por numero mas alto de paginas. \n" + " 9. Libros por numero de paginas de mayor a menor. \n" + " 10. Libros caros por titulo mayores a $50.000. \n" + " 11. Libros que tengan menos de 200 paginas. \n" + " 12. Libros mayores a $100.000 de mayor a menor. \n" +  " 13. Buscar un objeto del array por titulo. \n" + " 14. Buscar un objeto del array por autor. \n" + " 15. Buscar un objeto del array por fecha publicacion. \n" + " 16. Buscar un objeto del array por genero. \n" + " 17. Buscar un objeto del array por idioma \n" + " 18. Crear 10 iteraciones diferentes de busqueda de libros en el sistema.\n" +" 19. Salir.");
+        opcion = prompt("Seleccione una opción (1-19): \n" + " 1. Agregar un libro. \n" + " 2. Quitar un libro. \n" + " 3. Mostrar la pila de libros. \n" + " 4. Listar los libros en 10 iteraciones diferentes. \n" + " 5. Agregar descuentos. \n" + " 6. Listado de libros con descuentos. \n" + " 7. Libros con un precio mayor a $50.000. \n" + " 8. Libros por numero mas alto de paginas. \n" + " 9. Libros por numero de paginas de mayor a menor. \n" + " 10. Libros caros por titulo mayores a $50.000. \n" + " 11. Libros que tengan menos de 200 paginas. \n" + " 12. Libros mayores a $100.000 de mayor a menor. \n" +  " 13. Buscar un objeto del array por titulo. \n" + " 14. Buscar un objeto del array por autor. \n" + " 15. Buscar un objeto del array por fecha publicacion. \n" + " 16. Buscar un objeto del array por genero. \n" + " 17. Buscar un objeto del array por idioma \n" + " 18. Crear 10 iteraciones diferentes de busqueda de libros en el sistema.\n" +" 19. Salir.");
 
         switch (opcion) {
             case "1":
